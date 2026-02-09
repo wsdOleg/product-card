@@ -13,15 +13,14 @@ const recolorCards = document.querySelectorAll('.product-card')
 const recolorCardsBtn = document.getElementById(
 	'recolor-background-all-cards-button',
 )
-recolorCardsBtn.addEventListener('click', () => {
-	recolorCards.forEach(card => (card.style.backgroundColor = yellowHashColor))
+recolorCards.forEach(card => {
+	card.style.backgroundColor = yellowHashColor
 })
 
-const googleOpenBtn = document.getElementById('open-google-button')
-googleOpenBtn.addEventListener('click', openGoogle)
+const openGoogleBtn = document.getElementById('open-google-button')
+openGoogleBtn.addEventListener('click', openGoogle)
 function openGoogle() {
-	const answer = confirm('Вы действительно хотите перейти на сайт Google?')
-
+	answer = confirm('Вы действительно хотите перейти на сайт Google?')
 	if (answer === true) {
 		window.open('https://google.com')
 	} else {
@@ -34,12 +33,9 @@ titleText.addEventListener('mouseenter', () => {
 	console.log(titleText.textContent)
 })
 
-const changeBtnColor = document.getElementById('change-button-color')
-changeBtnColor.classList.add('black')
-changeBtnColor.addEventListener('click', () => {
-	if (changeBtnColor.classList.contains('black')) {
-		changeBtnColor.classList.replace('black', 'green')
-	} else {
-		changeBtnColor.classList.replace('green', 'black')
-	}
+const changeColorBtn = document.getElementById('change-button-color')
+changeColorBtn.classList.add('black')
+changeColorBtn.addEventListener('click', () => {
+	changeColorBtn.classList.toggle('black')
+	changeColorBtn.classList.toggle('green')
 })
