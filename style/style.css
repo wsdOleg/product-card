@@ -12,6 +12,7 @@ body {
 	width: 790px;
 	height: 697px;
 	margin-left: 480px;
+	z-index: -1;
 }
 
 .page-title {
@@ -21,6 +22,15 @@ body {
 	text-align: center;
 	color: #515076;
 	position: relative;
+	z-index: 1;
+}
+
+.buttons {
+	position: absolute;
+	top: 0;
+	width: 2000px;
+	text-align: center;
+	padding: 15px;
 	z-index: 1;
 }
 
@@ -104,4 +114,14 @@ body {
 .product-card__price-value {
 	font-weight: 400;
 	font-size: 20px;
+}
+
+.black {
+	background-color: #1b1b1b;
+	color: #ffffff;
+}
+
+.green {
+	background-color: #2f8f4e;
+	color: #ffffff;
 }
