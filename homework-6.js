@@ -35,13 +35,14 @@ addMaxSpeed(car);
 
 console.log(car);
 //6 функция получает первым аргументом объект, а вторым — свойство
-function showPropertyValue(obj, property) {
+function showObjectValue(obj, property) {
   console.log(obj[property]);
 }
 
-showPropertyValue(car, "brand");
-showPropertyValue(car, "model");
-showPropertyValue(user, "name");
+showObjectValue(car, "brand");
+showObjectValue(car, "model");
+showObjectValue(user, "name");
+
 
 //7 массив продуктов
 const products = ["яблоки", "груши", "молоко", "икра", "банан"];
@@ -109,17 +110,15 @@ const universeBooks = [
 
 const allBooks = [...books, ...universeBooks];
 
-//10 map: добавляю свойство isRare по году выпуска
-function addRareFlag(items) {
-	return items.map((book) => {
-		return {
-			...book,
-			isRare: book.year > 2000
-		};
-	});
+// 10 map: добавляю свойство isRare по году выпуска
+function getBooksWithRareFlag(books) {
+  return books.map((book) => ({
+    ...book,
+    isRare: book.year > 2000
+  }));
 }
 
-const booksWithRare = addRareFlag(allBooks);
+const booksWithRare = getBooksWithRareFlag(allBooks);
 console.log(booksWithRare);
 
 
