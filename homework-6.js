@@ -13,8 +13,8 @@ const user = {
 
 //4 данные автомобиля 
 const car = {
-  brand: "Honda",
-  model: "Civic 8 4d", 
+	brand: "Honda",
+	model: "Civic 8 4d", 
 	year: 2007, 
 	color: "темно-синий",
 	transmission: "АКПП"
