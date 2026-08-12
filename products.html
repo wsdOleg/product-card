@@ -47,6 +47,172 @@
 				</div>
 			</template>
 		</div>
+
+		<footer class="page-footer">
+			<div class="page-footer__content">
+				<div class="page-footer__info">
+					<h2 class="page-footer__title">Product Cards</h2>
+					<p class="page-footer__text">
+						У нас самые лучшие продукты для кожи!
+					</p>
+					<div class="page-footer__socials">
+						<a
+							class="page-footer__social-link"
+							href="https://web.telegram.org/k/"
+							aria-label="Telegram"
+						>
+							<img
+								class="page-footer__social-icon"
+								src="img/Telegram-icon.svg"
+								alt=""
+							/>
+						</a>
+						<a
+							class="page-footer__social-link"
+							href="https://vk.ru/feed"
+							aria-label="VK"
+						>
+							<img
+								class="page-footer__social-icon"
+								src="img/VK-icon.svg"
+								alt=""
+							/>
+						</a>
+					</div>
+				</div>
+
+				<form class="page-footer__form">
+					<label class="page-footer__form-title" for="footer-email">
+						Подпишись на наши акции:
+					</label>
+					<div class="page-footer__subscribe">
+						<input
+							class="page-footer__input"
+							id="footer-email"
+							name="email"
+							type="email"
+							placeholder="Введи Email..."
+							required
+						/>
+						<button class="page-footer__button" type="submit">
+							Подписаться
+						</button>
+					</div>
+				</form>
+
+				<nav class="page-footer__nav">
+					<h3 class="page-footer__nav-title">Быстрые ссылки</h3>
+					<ul class="page-footer__nav-list">
+						<li><a class="page-footer__nav-link" href="#">Главная</a></li>
+						<li><a class="page-footer__nav-link" href="#">Магазин</a></li>
+						<li><a class="page-footer__nav-link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="page-footer__registration">
+				<button class="page-footer__registration-button" type="button">
+					Регистрация
+				</button>
+			</div>
+
+			<div class="page-footer__line"></div>
+			<p class="page-footer__copyright">
+				www.product-cards.com©all right reserve
+			</p>
+		</footer>
+
+		<div class="overlay"></div>
+
+		<div class="modal">
+			<button class="modal__close-button" type="button" aria-label="Закрыть">
+				×
+			</button>
+			<h2 class="modal__title">Регистрация</h2>
+			<form class="registration-form">
+				<label class="registration-form__label" for="first-name">
+					Имя
+					<input
+						class="registration-form__input"
+						id="first-name"
+						name="firstName"
+						type="text"
+						placeholder="Введите имя"
+						required
+						minlength="2"
+					/>
+				</label>
+
+				<label class="registration-form__label" for="last-name">
+					Фамилия
+					<input
+						class="registration-form__input"
+						id="last-name"
+						name="lastName"
+						type="text"
+						placeholder="Введите фамилию"
+						required
+						minlength="2"
+					/>
+				</label>
+
+				<label class="registration-form__label" for="birth-date">
+					Дата рождения
+					<input
+						class="registration-form__input"
+						id="birth-date"
+						name="birthDate"
+						type="date"
+						required
+					/>
+				</label>
+
+				<label class="registration-form__label" for="login">
+					Логин
+					<input
+						class="registration-form__input"
+						id="login"
+						name="login"
+						type="text"
+						placeholder="Введите логин"
+						required
+						minlength="3"
+					/>
+				</label>
+
+				<label class="registration-form__label" for="password">
+					Пароль
+					<input
+						class="registration-form__input"
+						id="password"
+						name="password"
+						type="password"
+						placeholder="Введите пароль"
+						required
+						minlength="6"
+					/>
+				</label>
+
+				<label class="registration-form__label" for="password-repeat">
+					Повторите пароль
+					<input
+						class="registration-form__input"
+						id="password-repeat"
+						name="passwordRepeat"
+						type="password"
+						placeholder="Повторите пароль"
+						required
+						minlength="6"
+					/>
+				</label>
+
+				<button class="registration-form__button" type="submit">
+					Зарегистрироваться
+				</button>
+			</form>
+		</div>
+
 		<script type="module" src="./homework-8.js"></script>
+		<script type="module" src="./homework-11.js"></script>
 	</body>
 </html>
