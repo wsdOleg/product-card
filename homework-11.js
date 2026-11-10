@@ -1,5 +1,5 @@
-import { handleRegistrationFormSubmit, handleSubscribeFormSubmit } from "./form.js"
-import { closeRegistrationModal, openRegistrationModal } from "./modal.js"
+import { handleRegistrationFormSubmit, handleSubscribeFormSubmit } from "./homework-11/form.js"
+import { closeRegistrationModal, openRegistrationModal } from "./homework-11/modal.js"
 
 document
 	.querySelector(".page-footer__form")
